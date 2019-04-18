@@ -8,9 +8,8 @@ import numpy as np
 import pandas as pd
 
 with open('params.json') as json_file:  
-    data_path = json.load(json_file)
-
-basepath = "B:\\Documents\\School\\College\\Year 2\\Psych_711\\Project\\Data\\"
+    params = json.load(json_file)
+    basepath = params["base_path"]
 
 def draw_square(im, point, num, fill):
     draw = ImageDraw.Draw(im)

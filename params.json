@@ -10,7 +10,7 @@
   "use_cuda": true,
   "display_step": 100,
   "save_step": 10000,
-  "base_path": "B:\\Documents\\School\\College\\Year 2\\Psych_711\\semester_project\\",
+  "base_path": "home\\declan\\BetaVAE\\",
   "train_csv": "new_data.csv",
   "test_csv": "test_dataset.csv",
   "data_dir": "New Data\\",
