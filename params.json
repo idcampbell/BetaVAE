@@ -10,12 +10,12 @@
   "use_cuda": true,
   "display_step": 100,
   "save_step": 10000,
-  "base_path": "home\\declan\\BetaVAE\\",
+  "base_path": "/home/declan/BetaVAE/",
   "train_csv": "new_data.csv",
   "test_csv": "test_dataset.csv",
-  "data_dir": "New Data\\",
-  "ckpt_dir": "Checkpoints\\",
-  "log_dir": "Logs\\log.pkl",
-  "output_dir": "Output\\",
+  "data_dir": "New Data/",
+  "ckpt_dir": "Checkpoints/",
+  "log_dir": "Logs/log.pkl",
+  "output_dir": "Output/",
   "num_workers": 2
 }
