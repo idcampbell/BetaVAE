@@ -9,7 +9,7 @@ import pandas as pd
 
 with open('params.json') as json_file:  
     params = json.load(json_file)
-    basepath = params["base_path"]
+    basepath = params["base_path"] + "/Data/"
 
 def draw_square(im, point, num, fill):
     draw = ImageDraw.Draw(im)
