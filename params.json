@@ -1,0 +1,21 @@
+{
+  "dataset": "shapes",
+  "batch_size": 256,
+  "lr": 1e-3,
+  "test_batch_size": 10,
+  "epochs": 400,
+  "seed": 8,
+  "z_dim": 100,
+  "beta": 1,
+  "use_cuda": true,
+  "display_step": 100,
+  "save_step": 10000,
+  "base_path": "B:\\Documents\\School\\College\\Year 2\\Psych_711\\semester_project\\",
+  "train_csv": "new_data.csv",
+  "test_csv": "test_dataset.csv",
+  "data_dir": "New Data\\",
+  "ckpt_dir": "Checkpoints\\",
+  "log_dir": "Logs\\log.pkl",
+  "output_dir": "Output\\",
+  "num_workers": 2
+}
