@@ -10,12 +10,11 @@
   "use_cuda": true,
   "display_step": 100,
   "save_step": 10000,
-  "base_path": "/home/declan/BetaVAE/",
-  "train_csv": "new_data.csv",
+  "base_path": "B:/Documents/School/College/Year 2/Psych_711/Project/",
   "test_csv": "test_dataset.csv",
-  "data_dir": "New Data/",
+  "data_dir": "Data/",
   "ckpt_dir": "Checkpoints/",
   "log_dir": "Logs/log.pkl",
   "output_dir": "Output/",
-  "num_workers": 2
+  "cond": "lower_right_green_squares_"
 }

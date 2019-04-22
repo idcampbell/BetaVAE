@@ -8,17 +8,18 @@ from torch.utils.data import DataLoader
 from torch.utils.data.sampler import Sampler
 import torchvision.transforms as transforms
 
+
 # Read in some of the parameters we need.
 with open('params.json') as json_file:  
     params = json.load(json_file)
-    train_csv = params["train_csv"]
+    basepath = params["basepath"]
+    train_csv = basepath "CSVs/allData.csv"
 
     
 class ShapesDataset(Dataset):
     
-    def __init__(self, transform=None):
-        filename = train_csv
-        data_csv = pd.read_csv(filename, index_col=False)
+    def __init__(self, transform=None, csv=train_csv):
+        data_csv = pd.read_csv(csv, index_col=False)
         self.train_file_names = [name for name in data_csv["filename"]]
         
         self.nImages = len(self.train_file_names)
@@ -43,7 +44,3 @@ class ShapesDataset(Dataset):
         
     def __len__(self):
         return len(self.images)
-
-
-
-

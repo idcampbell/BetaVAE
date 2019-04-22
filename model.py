@@ -109,6 +109,7 @@ class BetaVAE(nn.Module):
         for block in self._modules:
             for m in self._modules[block]:
                 kaiming_init(m)
+                
     def kaiming_init(m):
         if isinstance(m, (nn.Linear, nn.Conv2d)):
             init.kaiming_normal(m.weight)
